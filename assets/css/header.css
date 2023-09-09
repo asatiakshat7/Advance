@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color: aliceblue;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: blue;
+    align-items: baseline;
+    width: 100vw;
+    /* position:fixed;
+    top: 0px; */
+    pos
+
+}
+
+#gsearch{
+    height: 20px;
+}
+
+div a{
+    color: aliceblue;
+    margin: 2px;
+    text-decoration: none;
+}

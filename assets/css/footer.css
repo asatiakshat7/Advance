@@ -1,0 +1,16 @@
+footer{
+    background-color: black;
+    color: aliceblue;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100vw;
+    bottom: 0px;
+    /* margin-top: auto; */
+    position: fixed;
+}
+footer a{
+    color: aliceblue;
+    margin: 20px;
+    text-decoration: none;
+}

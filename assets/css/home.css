@@ -1,0 +1,12 @@
+#home-container{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+#info{
+    width: 70%;
+}
+
+#user-friends{
+width: 30%;
+}

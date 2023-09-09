@@ -1,0 +1,24 @@
+<li>
+    <!-- <p>
+        <% if((locals.user)&&(locals.user.id==post.user.id)){%>
+            <small>
+                <a href="/comments/destory/<%= comment.id%>">User-Destroy</a>
+            </small> 
+        <%}%>
+    </p> -->
+    <p>
+        <%if((locals.user) && (locals.user.id==comment.user.id)){%>
+            <small>
+                <a href="/comments/destory/<%= comment.id%>">X</a>
+            </small>
+        <%}%>
+    </p>
+    <p>
+        <%= comment.content%>
+            <br>
+            <small>
+                <%=comment.user.email%>
+            </small>
+    </p>
+
+</li>

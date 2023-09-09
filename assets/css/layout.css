@@ -1,0 +1,73 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    margin: 0;
+    /* text-align: center; */
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box}
+
+#layout-main {
+    height: 100vh;
+ }
+ 
+ .container{
+  padding: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+ }
+.info{
+  height: auto;
+}
+ /* Input fields */
+ input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]{
+  background-color: #ddd;
+  outline: none;
+}
+
+.signupbtn {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #1aaa65;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.clearfix{
+  padding: 16px;
+  width: 50%;
+  margin: auto;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a:link{
+  color: black;
+}

@@ -1,0 +1,60 @@
+<link rel="StyleSheet" href="/css/home.css">
+<div id="home-container">
+    <div id="info">
+        <h1>
+            Codeial / <%= title %>
+        </h1>
+        <% if(locals.user){%>
+            <section id="feed-posts">
+                <h4>Posts</h4>
+                <form action="/posts/create" id="new-post-form" method="POST">
+                    <textarea name="content" rows="4" cols="50">
+                        </textarea>
+                    <input type="submit" value="Post">
+                </form>
+            </section>
+            <%}%>
+    
+    
+                <div id="posts-list-container">
+                    <ul>
+                        <% for(post of Post){%>
+                            <%- include('_post'); %>
+                            <%}%>
+                    </ul>
+                </div>
+    </div>
+    
+    <section id="user-friends">
+        <h4>Ferinds</h4>
+        <ul>
+        
+            <% for(u of all_users){%>
+                <li>
+                    <a href="/users/profile/<%=u.id%>"><%= u.name%></a>
+                </li>
+                
+            <%}%>
+        </ul>
+        
+    </section>
+    <%- include('_chat'); %>
+</div>
+
+<!-- importing this script for creating the comments -->
+<script src="/js/home_comments.js"></script>
+<script src="/js/home_posts.js"></script>
+<script src="/js/toggle_likes.js"></script>
+<script >
+    $('.toggle-like-button').each(function(){
+        let self=this;
+        let toggleLike=new ToggleLike(self);
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+<script src="/js/chats_engine.js"></script>
+<% if(locals.user){%>
+<script>
+    new ChatEngine('user-chat-box','<%= locals.user.email %>');
+</script>
+<%}%>

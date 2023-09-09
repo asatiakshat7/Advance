@@ -1,0 +1,28 @@
+<div class="info">
+
+    <form action="/users/create" method="POST">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <label for="name"><b>Name</b></label>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <label for="email"><b>Email</b></label>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password" placeholder="Password" required>
+        <label for="confirm_password"><b>Confirm_password</b></label>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <a href="/users/auth/google">Google</a>
+            <!-- <button type="submit" class="signupbtn" redirect="users/auth/google">Google</button> -->
+          </div>
+        </div>
+        
+    
+    </form>
+    <!-- <div class="clearfix">
+        <button type="submit" class="signupbtn" redirect="users/auth/google">Google</button>
+      </div> -->
+      
+</div>
