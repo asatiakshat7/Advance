@@ -21,7 +21,7 @@ const development={
 
 } 
 const production={
-    name:'Production'
+    name:'Production',
 }
 
 module.exports=development;
