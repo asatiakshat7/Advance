@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const env=require('./environment');
 const ejs=require("ejs");
 const path=require('path');
 
@@ -10,8 +11,8 @@ let transporter = nodemailer.createTransport({
     secure: false,
     auth: {
       // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-      user: 'asatiakshat@gmail.com',
-      pass: 'codingninjas'
+      user: 'asatiakshat7@gmail.com',
+      pass: '@a200386'
     }
   });
 

@@ -12,8 +12,8 @@ router.post('/update/:id',passport.checkAuthentication,usersController.update);
 
 router.post('/create', usersController.create);
 
-router.get('/auth/google',passport.authenticate('google',{scope:['profile','email']}));
-router.get('/auth/google/callback',passport.authenticate('google',{failureRedirect:'/user/sign-in'},usersController.createSession));
+router.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']}));
+router.get('/auth/google/callback', passport.authenticate('google', {failureRedirect: '/users/sign-in'}), usersController.createSession);
 // router.get('/new-password',usersController.)
 // use passport as a middleware to authenticate
 router.post('/create-session', passport.authenticate(
