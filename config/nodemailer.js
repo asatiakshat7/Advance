@@ -13,7 +13,7 @@ let transporter = nodemailer.createTransport({
     secureConnection:false,
     auth: {
         user: "asatiakshat7@gmail.com",   //'alchemy.cn18',
-        pass:  "cudm wcta cnab jvpg"
+        pass:  "888888888888"
     },
     tls:{
       rejectUnauthorized:true
